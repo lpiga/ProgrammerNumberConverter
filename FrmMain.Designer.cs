@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Chk0 = new System.Windows.Forms.CheckBox();
@@ -180,9 +181,12 @@
             this.TxtSignedDecimal32 = new System.Windows.Forms.TextBox();
             this.LblUnsignedDecimal32 = new System.Windows.Forms.Label();
             this.LblSignedDecimal32 = new System.Windows.Forms.Label();
+            this.ContextMenuStripAbout = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.ContextMenuStripAbout.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -1560,96 +1564,96 @@
             // Txt64BitHex
             // 
             this.Txt64BitHex.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt64BitHex.Location = new System.Drawing.Point(144, 120);
+            this.Txt64BitHex.Location = new System.Drawing.Point(144, 29);
             this.Txt64BitHex.Name = "Txt64BitHex";
             this.Txt64BitHex.Size = new System.Drawing.Size(623, 25);
-            this.Txt64BitHex.TabIndex = 19;
+            this.Txt64BitHex.TabIndex = 13;
             this.Txt64BitHex.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.Txt64BitHex.TextChanged += new System.EventHandler(this.Txt64BitHex_TextChanged);
             // 
             // Lbl64BitHex
             // 
             this.Lbl64BitHex.AutoSize = true;
-            this.Lbl64BitHex.Location = new System.Drawing.Point(20, 123);
+            this.Lbl64BitHex.Location = new System.Drawing.Point(20, 32);
             this.Lbl64BitHex.Name = "Lbl64BitHex";
             this.Lbl64BitHex.Size = new System.Drawing.Size(92, 17);
-            this.Lbl64BitHex.TabIndex = 18;
+            this.Lbl64BitHex.TabIndex = 12;
             this.Lbl64BitHex.Text = "Hexadecimal:";
             // 
             // TxtBinary64
             // 
             this.TxtBinary64.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBinary64.Location = new System.Drawing.Point(144, 150);
+            this.TxtBinary64.Location = new System.Drawing.Point(144, 59);
             this.TxtBinary64.Name = "TxtBinary64";
             this.TxtBinary64.Size = new System.Drawing.Size(623, 25);
-            this.TxtBinary64.TabIndex = 21;
+            this.TxtBinary64.TabIndex = 15;
             this.TxtBinary64.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TxtBinary64.TextChanged += new System.EventHandler(this.TxtBinary64_TextChanged);
             // 
             // TxtDouble
             // 
             this.TxtDouble.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDouble.Location = new System.Drawing.Point(144, 90);
+            this.TxtDouble.Location = new System.Drawing.Point(144, 149);
             this.TxtDouble.Name = "TxtDouble";
             this.TxtDouble.Size = new System.Drawing.Size(623, 25);
-            this.TxtDouble.TabIndex = 17;
+            this.TxtDouble.TabIndex = 21;
             this.TxtDouble.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TxtDouble.TextChanged += new System.EventHandler(this.TxtDouble_TextChanged);
             // 
             // TxtUnsignedDecimal64
             // 
             this.TxtUnsignedDecimal64.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtUnsignedDecimal64.Location = new System.Drawing.Point(144, 60);
+            this.TxtUnsignedDecimal64.Location = new System.Drawing.Point(144, 119);
             this.TxtUnsignedDecimal64.Name = "TxtUnsignedDecimal64";
             this.TxtUnsignedDecimal64.Size = new System.Drawing.Size(623, 25);
-            this.TxtUnsignedDecimal64.TabIndex = 15;
+            this.TxtUnsignedDecimal64.TabIndex = 19;
             this.TxtUnsignedDecimal64.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TxtUnsignedDecimal64.TextChanged += new System.EventHandler(this.TxtUnsignedDecimal64_TextChanged);
             // 
             // TxtSignedDecimal64
             // 
             this.TxtSignedDecimal64.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSignedDecimal64.Location = new System.Drawing.Point(144, 30);
+            this.TxtSignedDecimal64.Location = new System.Drawing.Point(144, 89);
             this.TxtSignedDecimal64.Name = "TxtSignedDecimal64";
             this.TxtSignedDecimal64.Size = new System.Drawing.Size(623, 25);
-            this.TxtSignedDecimal64.TabIndex = 13;
+            this.TxtSignedDecimal64.TabIndex = 16;
             this.TxtSignedDecimal64.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TxtSignedDecimal64.TextChanged += new System.EventHandler(this.TxtSignedDecimal64_TextChanged);
             // 
             // LblDouble
             // 
             this.LblDouble.AutoSize = true;
-            this.LblDouble.Location = new System.Drawing.Point(21, 93);
+            this.LblDouble.Location = new System.Drawing.Point(21, 152);
             this.LblDouble.Name = "LblDouble";
             this.LblDouble.Size = new System.Drawing.Size(57, 17);
-            this.LblDouble.TabIndex = 16;
+            this.LblDouble.TabIndex = 20;
             this.LblDouble.Text = "Double:";
             // 
             // LblUnsignedDecimal64
             // 
             this.LblUnsignedDecimal64.AutoSize = true;
-            this.LblUnsignedDecimal64.Location = new System.Drawing.Point(19, 63);
+            this.LblUnsignedDecimal64.Location = new System.Drawing.Point(19, 122);
             this.LblUnsignedDecimal64.Name = "LblUnsignedDecimal64";
             this.LblUnsignedDecimal64.Size = new System.Drawing.Size(119, 17);
-            this.LblUnsignedDecimal64.TabIndex = 14;
+            this.LblUnsignedDecimal64.TabIndex = 18;
             this.LblUnsignedDecimal64.Text = "Unigned Decimal:";
             // 
             // LblBinary64
             // 
             this.LblBinary64.AutoSize = true;
-            this.LblBinary64.Location = new System.Drawing.Point(22, 153);
+            this.LblBinary64.Location = new System.Drawing.Point(22, 62);
             this.LblBinary64.Name = "LblBinary64";
             this.LblBinary64.Size = new System.Drawing.Size(52, 17);
-            this.LblBinary64.TabIndex = 20;
+            this.LblBinary64.TabIndex = 14;
             this.LblBinary64.Text = "Binary:";
             // 
             // LblSignedDecimal64
             // 
             this.LblSignedDecimal64.AutoSize = true;
-            this.LblSignedDecimal64.Location = new System.Drawing.Point(19, 33);
+            this.LblSignedDecimal64.Location = new System.Drawing.Point(19, 92);
             this.LblSignedDecimal64.Name = "LblSignedDecimal64";
             this.LblSignedDecimal64.Size = new System.Drawing.Size(110, 17);
-            this.LblSignedDecimal64.TabIndex = 12;
+            this.LblSignedDecimal64.TabIndex = 16;
             this.LblSignedDecimal64.Text = "Signed Decimal:";
             // 
             // groupBox3
@@ -1674,106 +1678,124 @@
             // TxtBinary32
             // 
             this.TxtBinary32.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBinary32.Location = new System.Drawing.Point(144, 150);
+            this.TxtBinary32.Location = new System.Drawing.Point(144, 60);
             this.TxtBinary32.Name = "TxtBinary32";
             this.TxtBinary32.Size = new System.Drawing.Size(623, 25);
-            this.TxtBinary32.TabIndex = 10;
+            this.TxtBinary32.TabIndex = 4;
             this.TxtBinary32.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TxtBinary32.TextChanged += new System.EventHandler(this.TxtBinary32_TextChanged);
             // 
             // LblBinary32
             // 
             this.LblBinary32.AutoSize = true;
-            this.LblBinary32.Location = new System.Drawing.Point(19, 153);
+            this.LblBinary32.Location = new System.Drawing.Point(19, 63);
             this.LblBinary32.Name = "LblBinary32";
             this.LblBinary32.Size = new System.Drawing.Size(52, 17);
-            this.LblBinary32.TabIndex = 9;
+            this.LblBinary32.TabIndex = 3;
             this.LblBinary32.Text = "Binary:";
             // 
             // Txt32BitHex
             // 
             this.Txt32BitHex.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt32BitHex.Location = new System.Drawing.Point(144, 120);
+            this.Txt32BitHex.Location = new System.Drawing.Point(144, 30);
             this.Txt32BitHex.Name = "Txt32BitHex";
             this.Txt32BitHex.Size = new System.Drawing.Size(623, 25);
-            this.Txt32BitHex.TabIndex = 8;
+            this.Txt32BitHex.TabIndex = 2;
             this.Txt32BitHex.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.Txt32BitHex.TextChanged += new System.EventHandler(this.Txt32BitHex_TextChanged);
             // 
             // Lbl32BitHex
             // 
             this.Lbl32BitHex.AutoSize = true;
-            this.Lbl32BitHex.Location = new System.Drawing.Point(19, 123);
+            this.Lbl32BitHex.Location = new System.Drawing.Point(19, 33);
             this.Lbl32BitHex.Name = "Lbl32BitHex";
             this.Lbl32BitHex.Size = new System.Drawing.Size(92, 17);
-            this.Lbl32BitHex.TabIndex = 7;
+            this.Lbl32BitHex.TabIndex = 1;
             this.Lbl32BitHex.Text = "Hexadecimal:";
             // 
             // TxtFloat
             // 
             this.TxtFloat.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtFloat.Location = new System.Drawing.Point(144, 90);
+            this.TxtFloat.Location = new System.Drawing.Point(144, 150);
             this.TxtFloat.Name = "TxtFloat";
             this.TxtFloat.Size = new System.Drawing.Size(623, 25);
-            this.TxtFloat.TabIndex = 6;
+            this.TxtFloat.TabIndex = 10;
             this.TxtFloat.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TxtFloat.TextChanged += new System.EventHandler(this.TxtFloat_TextChanged);
             // 
             // LblFloat
             // 
             this.LblFloat.AutoSize = true;
-            this.LblFloat.Location = new System.Drawing.Point(19, 93);
+            this.LblFloat.Location = new System.Drawing.Point(19, 153);
             this.LblFloat.Name = "LblFloat";
             this.LblFloat.Size = new System.Drawing.Size(43, 17);
-            this.LblFloat.TabIndex = 5;
+            this.LblFloat.TabIndex = 9;
             this.LblFloat.Text = "Float:";
             // 
             // TxtUnsignedDecimal32
             // 
             this.TxtUnsignedDecimal32.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtUnsignedDecimal32.Location = new System.Drawing.Point(144, 60);
+            this.TxtUnsignedDecimal32.Location = new System.Drawing.Point(144, 120);
             this.TxtUnsignedDecimal32.Name = "TxtUnsignedDecimal32";
             this.TxtUnsignedDecimal32.Size = new System.Drawing.Size(623, 25);
-            this.TxtUnsignedDecimal32.TabIndex = 4;
+            this.TxtUnsignedDecimal32.TabIndex = 8;
             this.TxtUnsignedDecimal32.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TxtUnsignedDecimal32.TextChanged += new System.EventHandler(this.TxtUnsignedDecimal32_TextChanged);
             // 
             // TxtSignedDecimal32
             // 
             this.TxtSignedDecimal32.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSignedDecimal32.Location = new System.Drawing.Point(144, 30);
+            this.TxtSignedDecimal32.Location = new System.Drawing.Point(144, 90);
             this.TxtSignedDecimal32.Name = "TxtSignedDecimal32";
             this.TxtSignedDecimal32.Size = new System.Drawing.Size(623, 25);
-            this.TxtSignedDecimal32.TabIndex = 2;
+            this.TxtSignedDecimal32.TabIndex = 6;
             this.TxtSignedDecimal32.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TxtSignedDecimal32.TextChanged += new System.EventHandler(this.TxtSignedDecimal32_TextChanged);
             // 
             // LblUnsignedDecimal32
             // 
             this.LblUnsignedDecimal32.AutoSize = true;
-            this.LblUnsignedDecimal32.Location = new System.Drawing.Point(19, 63);
+            this.LblUnsignedDecimal32.Location = new System.Drawing.Point(19, 123);
             this.LblUnsignedDecimal32.Name = "LblUnsignedDecimal32";
             this.LblUnsignedDecimal32.Size = new System.Drawing.Size(126, 17);
-            this.LblUnsignedDecimal32.TabIndex = 3;
+            this.LblUnsignedDecimal32.TabIndex = 7;
             this.LblUnsignedDecimal32.Text = "Unsigned Decimal:";
             // 
             // LblSignedDecimal32
             // 
             this.LblSignedDecimal32.AutoSize = true;
-            this.LblSignedDecimal32.Location = new System.Drawing.Point(19, 33);
+            this.LblSignedDecimal32.Location = new System.Drawing.Point(19, 93);
             this.LblSignedDecimal32.Name = "LblSignedDecimal32";
             this.LblSignedDecimal32.Size = new System.Drawing.Size(110, 17);
-            this.LblSignedDecimal32.TabIndex = 1;
+            this.LblSignedDecimal32.TabIndex = 5;
             this.LblSignedDecimal32.Text = "Signed Decimal:";
+            // 
+            // ContextMenuStripAbout
+            // 
+            this.ContextMenuStripAbout.AllowDrop = true;
+            this.ContextMenuStripAbout.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.ContextMenuStripAbout.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.ContextMenuStripAbout.Name = "ContextMenuStripAbout";
+            this.ContextMenuStripAbout.Size = new System.Drawing.Size(120, 28);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(119, 24);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 539);
+            this.ContextMenuStrip = this.ContextMenuStripAbout;
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmMain";
@@ -1784,6 +1806,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.ContextMenuStripAbout.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1940,6 +1963,8 @@
         private System.Windows.Forms.TextBox TxtSignedDecimal32;
         private System.Windows.Forms.Label LblUnsignedDecimal32;
         private System.Windows.Forms.Label LblSignedDecimal32;
+        private System.Windows.Forms.ContextMenuStrip ContextMenuStripAbout;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }
 

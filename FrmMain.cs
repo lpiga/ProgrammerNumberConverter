@@ -343,5 +343,11 @@ namespace ProgrammerNumberConverter
             }
             UpdateTextBox(val);
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAbout f = new FrmAbout();
+            f.Show();
+        }
     }
 }
