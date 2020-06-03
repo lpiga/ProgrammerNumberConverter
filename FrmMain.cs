@@ -210,9 +210,13 @@ namespace ProgrammerNumberConverter
         private void TxtBinary32_TextChanged(object sender, EventArgs e)
         {
             if (updating_text_) return;
-            uint val = Convert.ToUInt32(TxtBinary32.Text, 2);
-            UpdateTextBox(val);
-            BinaryToChecks(val);
+            try
+            {
+                uint val = Convert.ToUInt32(TxtBinary32.Text, 2);
+                UpdateTextBox(val);
+                BinaryToChecks(val);
+            }
+            catch { }
         }
 
         private void TxtSignedDecimal64_TextChanged(object sender, EventArgs e)
