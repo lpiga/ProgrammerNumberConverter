@@ -264,7 +264,7 @@ namespace ProgrammerNumberConverter
             if (updating_text_) return;
             try
             {
-                ulong val = Convert.ToUInt64(Txt64BitHex.Text, 2);
+                ulong val = Convert.ToUInt64(TxtBinary64.Text, 2);
                 UpdateTextBox(val);
                 BinaryToChecks(val);
             }
